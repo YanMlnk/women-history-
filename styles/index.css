@@ -1,3 +1,4 @@
+
 body {
     height: 100%;
     width: 100%;
@@ -52,14 +53,13 @@ header {
         justify-items: center;
         align-items: center;
         flex-direction: column;
-
+        padding: 20px;
     }
     
     .page-title {
         font-family: cooper-black-std, serif;
         font-size: 30px;
         color: #B98B76;
-        
     }
 
     .page-text-container {
@@ -68,13 +68,101 @@ header {
         justify-content: center;
         align-content: center;
         flex-direction: row;
-        
     }
+
     .page-text {
         text-align: center;
         font-family: lato, sans-serif;
         font-style: italic;
         font-size: 20px;
         color: black;
-        
     }
+
+.flag-container {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;   
+}
+a {
+    
+    font-family: lato, sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.562);
+    position: relative;
+    text-decoration: none;
+    /* padding: 5px; */
+   
+   
+   
+  }
+  
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+.india-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid #FF9933;
+    border-bottom:4px solid #138808;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .india-link:hover::before {
+    transform: scaleX(1);
+    
+  }
+
+
+  .belarus-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid #D22730;
+    border-bottom:4px solid #00AF66;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .belarus-link:hover::before {
+    transform: scaleX(1);
+  }
+
+  .sweden-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid #006AA7;
+    border-bottom:4px solid #FECC02;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .sweden-link:hover::before {
+    transform: scaleX(1);
+  }
+
+  .image {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+  .graphic-image {
+    width: 100%;
+    height:100%;
+  }
