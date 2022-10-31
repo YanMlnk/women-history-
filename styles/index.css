@@ -79,13 +79,29 @@ header {
     }
 
 .flag-container {
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;   
-}
+   
+        height: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+      }
+
+      .india-link {
+        grid-column: 2 / 3;
+        place-self: center;
+      }
+      
+      .belarus-link {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        place-self: center;
+      }
+      
+      .sweden-link {
+        grid-column: 4 / 5;
+        place-self: center;
+      }
 a {
     
     font-family: lato, sans-serif;
